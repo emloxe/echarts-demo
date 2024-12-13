@@ -68,7 +68,7 @@ export default {
           {
             type: 'pie',
             // radius: '50%',
-            radius: ['40%', '55%'],
+            radius: ['40%', '50%'],
             center: ['50%', '50%'],
             color: ['#0096ff', '#f85f5b'],
             data,
@@ -98,9 +98,69 @@ export default {
               color: 'pink',
               borderColor: '#FFF',
               normal: {
-                borderWidth: 4,
+                borderWidth: 1,
                 borderRadius: 10,
-                borderColor: 'rgba(0,0,0,2)'
+                borderColor: 'rgba(0,0,0,0)'
+              }
+            },
+            labelLine: {
+              normal: {
+                backgroundColor: 'yellow',
+                borderColor: 'skyblue',
+                borderWidth: 10,
+                lineStyle: {
+                  borderColor: 'skyblue',
+                  borderWidth: 10,
+                  backgroundColor: 'yellow'
+                }
+              }
+            }
+          },
+          {
+            type: 'pie',
+            // radius: '50%',
+            radius: ['10%', '20%'],
+            center: ['50%', '50%'],
+            color: ['#0096ff', '#f85f5b'],
+            data: [
+              {
+                value: 18,
+                name: '正常2'
+              },
+              {
+                value: 12,
+                name: '异常2'
+              }
+            ],
+            // roseType: 'radius',
+
+            label: {
+              normal: {
+                formatter: ['{b|{b}{d}%}', '{c|{c}个}'].join('\n'),
+                rich: {
+                  b: {
+                    color: '#d9efff',
+                    fontSize: 15,
+                    height: 40
+                  },
+                  c: {
+                    color: '#fff',
+                    fontSize: 14,
+                    fontWeight: 'bold',
+                    lineHeight: 5
+                  }
+                }
+              }
+            },
+            itemStyle: {
+              // borderWidth: 2,
+              borderRadius: 10,
+              color: 'pink',
+              borderColor: '#FFF',
+              normal: {
+                borderWidth: 1,
+                borderRadius: 10,
+                borderColor: 'rgba(0,0,0,0)'
               }
             },
             labelLine: {

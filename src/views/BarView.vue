@@ -48,6 +48,14 @@
     <div class="box1">
       <Bar15 />
     </div>
+
+    <div class="box1">
+      <Bar16 />
+    </div>
+
+    <div class="box1">
+      <Bar17 />
+    </div>
   </div>
 </template>
 
@@ -70,6 +78,8 @@ import Bar12 from '@/components3/bar/Bar12.vue';
 import Bar13 from '@/components3/bar/Bar13.vue';
 import Bar14 from '@/components3/bar/Bar14.vue';
 import Bar15 from '@/components3/bar/Bar15.vue';
+import Bar16 from '@/components3/bar/Bar16.vue';
+import Bar17 from '@/components3/bar/Bar17.vue';
 
 export default {
   name: 'ChartBar',
@@ -88,7 +98,9 @@ export default {
     Bar12,
     Bar13,
     Bar14,
-    Bar15
+    Bar15,
+    Bar16,
+    Bar17
   }
 };
 </script>
